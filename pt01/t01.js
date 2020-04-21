@@ -1,5 +1,5 @@
 var name = "Maria Jones";
-var age = 21;
+var age = 21.5;
 var hasDriverLicence = true;
 var unused = undefined;
 
