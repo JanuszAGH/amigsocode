@@ -5,3 +5,9 @@ var person = {
 };
 
 console.log(person);
+
+console.log(JSON.stringify(person));
+
+console.log(person.name);
+console.log(person.age);
+console.log(person.hasDriverLicence);
