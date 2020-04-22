@@ -1,25 +1,8 @@
 var names = ["Alex", "Maria", "Sam"];
-// console.log(names);
 
 
-// for (var name of names) {
-//     console.log(name);
-// }
-//
-// console.log(name);
+names.forEach(function (e, i) {
+    console.log(i, e);
+});
 
-var person = {
-    name: "Maria Jones",
-    age: 21,
-    hasDriverLicence: true,
-    dateOfBirth: "01/01/2000",
-    address: {
-        city: "Warsaw",
-        street: "Wrzeciono"
-    }
-};
-
-for (var p in person) {
-    console.log(p, " ", person[p]);
-}
-
+names.forEach(e => console.log(e));
