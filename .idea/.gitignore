@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/$CACHE_FILE$
+/amigsocode.iml
+/encodings.xml
+/jsLinters/jslint.xml
+/misc.xml
+/modules.xml
+/inspectionProfiles/Project_Default.xml
+/vcs.xml
