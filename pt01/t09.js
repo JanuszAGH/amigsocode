@@ -12,3 +12,14 @@ function execute(callback) {
 
 execute(hello);
 execute(howdy);
+
+function callbackExample(name, callback) {
+    callback(name);
+}
+
+function introduce(name) {
+    console.log("I'm " + name);
+}
+
+callbackExample("Jack", introduce);
+callbackExample("Marry", introduce);
