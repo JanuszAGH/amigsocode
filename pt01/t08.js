@@ -14,5 +14,12 @@ map = map.reduce(function (a, e) {
 })
 console.log(map);
 
+function getCallbackfn() {
+    return (a, e) => a + e;
+}
+
+var sum = [].reduce(getCallbackfn(),0);
+console.log(sum);
+
 
 
