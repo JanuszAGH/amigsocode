@@ -18,7 +18,7 @@ function getCallbackfn() {
     return (a, e) => a + e;
 }
 
-var sum = [].reduce(getCallbackfn(),0);
+var sum = [].reduce(getCallbackfn
 console.log(sum);
 
 
