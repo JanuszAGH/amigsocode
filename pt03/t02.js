@@ -13,3 +13,21 @@ const numbers = [1, 2, 3];
 
 let s = sum(...numbers);
 console.log(s);
+
+const name = {
+    firstName: "Andy",
+    lastName: "Jones"
+}
+
+const address = {
+    country: "Poland",
+    city: "Warszawa",
+    street: "Wrzeciono"
+}
+
+const person = {
+    ...name,
+    ...address
+}
+
+console.log(person);
