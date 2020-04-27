@@ -8,7 +8,5 @@ set.delete(3);
 console.log(set);
 console.log(set.size);
 
-
-for (let e of set) {
-    console.log(e);
-}
+for(let e of set){
+    console.log(e);}
