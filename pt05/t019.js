@@ -1,5 +1,3 @@
-var fetch = require("node-fetch");
-
 const first = () => new Promise((resolve, reject) => resolve('Your cat is '));
 const second = (data) => new Promise((resolve, reject) => resolve(data + 'crazy'));
 
