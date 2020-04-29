@@ -1,18 +1,19 @@
 function http(url, method, successCallback, errorHandler) {
-    setTimeout(function () {
-        let data;
-        data = '{ data:"ABC"}';
 
-        if (data) {
-            successCallback(data);
-        } else {
-            errorHandler('No Data');
-        }
-    }, 1000);
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            let data;
+            // data = '{ data:"ABC"}';
+
+            if (data) {
+                resolve(data);
+            } else {
+                reject('No Data');
+            }
+        }, 1000);
+    });
 }
 
-http('http://google.com', 'GET', function (data) {
-    console.log(data);
-}, function (err) {
-    console.log(err);
-});
+http('http://google.com', 'GET')
+    .then((data) => console.log(data))
+    .catch(data => console.log(data));
