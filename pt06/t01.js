@@ -3,7 +3,14 @@ const getNumbers = function* () {
     yield "hello";
     yield true;
     yield {name: "Alex"};
+    return "EOT";
 }
 
 const numbersGen = getNumbers();
 
+console.log(numbersGen.next());
+console.log(numbersGen.next());
+console.log(numbersGen.next());
+console.log(numbersGen.next());
+console.log(numbersGen.next());
+console.log(numbersGen.next());
