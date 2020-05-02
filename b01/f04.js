@@ -1,13 +1,19 @@
-const array2d = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-for (let i = 0; i < array2d.length; i++) {
-    for (let j = 0; j < array2d[i].length; j++) {
-        console.log(array2d[i][j]);
-    }
-}
-console.log(array2d);
+const arr = [];
 
-array2d
-    .forEach(e => console.log(e));
+arr.push(1);
+arr.push(2);
+arr.push(3);
 
-array2d
-    .forEach(e => {e.forEach(e=>console.log(e))});
+console.log(arr);
+
+arr.unshift(0);
+arr.unshift(-1);
+arr.unshift(-2);
+
+console.log(arr);
+
+console.log(arr.shift());
+console.log(arr.shift());
+console.log(arr.shift());
+console.log(arr.shift());
+console.log(arr);
